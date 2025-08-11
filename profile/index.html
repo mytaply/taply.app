@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/logo.jpg" type="image/x-icon">
+    <title>Taply</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/skeletonLoader.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+</head>
+<body id="body">
+    <div id="app">
+        <nav class="app-nav">
+            <div class="row">
+                <div class="logo">
+                    <a href="../profile/">
+                        <h3>Taply<sup> BD</sup></h3>
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">shop</a></li>
+                    <li class="porfile"><a href="../user/"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- marin app section -->
+        <div class="skeletonLoader" id="skeletonLoader">
+            <div class="box">
+                <div class="skeleton">
+                    <div class="skeleton-left flex1">
+                        <div class="square circle"></div>
+                    </div>
+                    <div class="skeleton-right flex2">
+                        <div class="line h17 w40 m10"></div>
+                        <div class="line"></div>
+                        <div class="line h8 w50"></div>
+                        <div class="line  w75"></div>
+                    </div>
+                </div>
+                <div class="skeleton">
+                    <div class="skeleton-left flex1">
+                        <div class="square circle"></div>
+                    </div>
+                    <div class="skeleton-right flex2">
+                        <div class="line h17 w40 m10"></div>
+                        <div class="line"></div>
+                        <div class="line h8 w50"></div>
+                        <div class="line  w75"></div>
+                    </div>
+                </div>
+                <div class="skeleton">
+                    <div class="skeleton-left flex1">
+                        <div class="square circle"></div>
+                    </div>
+                    <div class="skeleton-right flex2">
+                        <div class="line h17 w40 m10"></div>
+                        <div class="line"></div>
+                        <div class="line h8 w50"></div>
+                        <div class="line  w75"></div>
+                    </div>
+                </div>
+                <div class="skeleton">
+                    <div class="skeleton-left flex1">
+                        <div class="square circle"></div>
+                    </div>
+                    <div class="skeleton-right flex2">
+                        <div class="line h17 w40 m10"></div>
+                        <div class="line"></div>
+                        <div class="line h8 w50"></div>
+                        <div class="line  w75"></div>
+                    </div>
+                </div>
+                <div class="skeleton">
+                    <div class="skeleton-left flex1">
+                        <div class="square circle"></div>
+                    </div>
+                    <div class="skeleton-right flex2">
+                        <div class="line h17 w40 m10"></div>
+                        <div class="line"></div>
+                        <div class="line h8 w50"></div>
+                        <div class="line  w75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-box" id="searchBox">
+            <input type="text" id="searchInput" placeholder="Search by name or skill...">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="public-profile-section" id="putlicProfile">
+            <div class="public-view-box template">
+                <div class="pp-img">
+                    <a href=""><img loading="lazy" data-php-img="5" src=""></a>
+                </div>
+                <div class="pp-details">
+                    <a href="">
+                        <div data-php-text="6" class="pp-name"></div>
+                    </a>
+                    <div data-php-view class="view-count"></div>
+                    <div data-php-text="7 8 9" class="skill"></div>
+                    <div data-php-text="14" class="pp-address"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination" id="pagination">
+            <button id="prevBtn" class="page-btn" disabled><i class="fa-solid fa-angle-left"></i>Prev</button>
+            <span id="pageInfo" class="page-info">Page 1 of X</span>
+            <button id="nextBtn" class="page-btn">Next<i class="fa-solid fa-angle-right"></i></button>
+        </div>
+
+        <div id="profile">
+            <div class="row profile-image-bg">
+                <div class="profile-image">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="profile">
+                    <div class="details-box">
+                        <div class="name-like-box">
+                            <div class="name"></div>
+                        </div>
+                        
+                        <div class="view-box">
+                            <p>View: <span id="view"></span></p>
+                            <p hidden><span id="profileId"></span></p> 
+                            <input hidden id="viewInput" readonly /> 
+                            <div hidden id="status"></div> 
+                        </div>
+
+                        <div class="theme" hidden></div>
+                        <div class="occupation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="company details"></div>
+                        <div class="work details"></div>
+                        <div class="school details"></div>
+                        <div class="college details"></div>
+                        <div class="University details"></div>
+                        <div class="gender details"></div>
+                        <div class="Maritals details"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bio">
+                    <span class="bio-title">About me</span>
+                    <p class="text-content"></p>
+                    <button class="read-more-btn">see more</button>
+                </div>
+            </div>
+            <div class="row">
+                <button class="contact-download-btn btn btn-accent" id="download-vcf">save Contact</button>
+            </div>
+            <div class="row">
+                <div class="social-mesia-title">
+                    <span>social media</span>
+                </div>
+                <ul class="social-media-row">
+                    <!-- Social Media -->
+                    <li class="facebook"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="instagram"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="website"><a href="" target="_blank" class="s-m-icon"><i class="fa-light fa-globe-pointer"></i></a></li>
+                    <li class="github"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="youtube"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="linkedin"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="twitter"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li class="whatsapp"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li class="tiktok"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li class="twitch"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-twitch"></i></a></li>
+                    <li class="pinterest"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li class="spotify"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-spotify"></i></a></li>
+                    <li class="reddit"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-reddit-alien"></i></a></li>
+                    <li class="line"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-line"></i></a></li>
+                    <li class="vk"><a href="" target="_blank" class="s-m-icon"><i class="fa-brands fa-vk"></i></a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="contact">
+                    <div class="contact-title">
+                        <span>contact</span>
+                    </div>
+                    <ul class="contact-menu">
+                        <li><a href="tel:"><i class="fa-light fa-phone"></i><span></span></a></li>
+                        <li><a href="tel:"><i class="fa-light fa-phone"></i><span></span></a></li>
+                        <li><a href="mailto:"><i class="fa-light fa-envelope"></i><span></span></a></li>
+                        <li><a target="_blank" href="https://www.google.com/maps?q="><i class="fa-light fa-location-dot"></i><span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script>
+        const readMoreBtn = document.querySelector('.read-more-btn');
+        const textContent = document.querySelector('.text-content');
+
+        readMoreBtn.addEventListener('click', () => {
+        if (readMoreBtn.textContent === 'see more') {
+            textContent.style.overflow = 'visible';
+            textContent.style.WebkitLineClamp = 'unset'; // Show full text
+            readMoreBtn.textContent = 'see less'; // Change button text
+        } else {
+            textContent.style.overflow = 'hidden';
+            textContent.style.WebkitLineClamp = 3; // Limit back to 3 lines
+            readMoreBtn.textContent = 'see more'; // Reset button text
+        }
+        });
+
+    </script>
+    <script src="../js/publicProfile.js"></script>
+    <script src="../js/database.js"></script>
+    <script src="../js/VLD.js"></script>
+    <script src="../js/viewCounter.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
