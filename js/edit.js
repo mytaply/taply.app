@@ -309,7 +309,7 @@ async function submitForm(formData) {
         swal("Done", "Data will be updated within 0 - 60 second.", "success")
             .then(() => {
                 const base = window.location.origin;
-                window.location.href = `${base}/profile/?user=${encodeURIComponent(idValue)}`;
+                window.location.href = `${base}/taply.app/profile/?user=${encodeURIComponent(idValue)}`;
             });
 
         // Reset the form fields
@@ -409,4 +409,5 @@ window.addEventListener('DOMContentLoaded', function () {
       textarea.remove(); // Completely remove textarea from the DOM
     }
   });
+
 });
