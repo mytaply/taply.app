@@ -1,1 +1,0 @@
-# taply.app
